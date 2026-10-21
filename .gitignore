@@ -1,0 +1,259 @@
+#  Dev Journey - .gitignore
+#  Python · C++ · Lua / Linux / Windows /
+
+#CLAUDE GIT IGNORE
+
+# Secrets & credentials (NEVER commit these)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+secrets.*
+credentials.json
+service-account*.json
+token.json
+*.secret
+
+# Operating Systems
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# Packaging / builds
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+wheels/
+pip-wheel-metadata/
+*.whl
+pip-log.txt
+
+# Tests, coverage & type checkers
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.hypothesis/
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+.dmypy.json
+
+
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+profile_default/
+ipython_config.py
+
+
+# C / C++
+# Compiled objects & libraries
+*.o
+*.obj
+*.ko
+*.lo
+*.slo
+*.gch
+*.pch
+*.a
+*.lib
+*.la
+*.laix
+*.dll
+*.dylib
+*.so.*
+
+# Executables (Linux, Windows / MinGW)
+*.exe
+*.out
+*.app
+*.elf
+a.out
+
+# Debug files
+*.dSYM/
+*.pdb
+*.ilk
+*.idb
+core
+core.*
+vgcore.*
+
+# CMake
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+CMakeUserPresets.json
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+Testing/
+_deps/
+compile_commands.json
+
+# Make / other build outputs
+out/
+bin/
+obj/
+
+# AI / Machine Learning
+# Datasets (keep a README explaining how to download them instead)
+data/
+datasets/
+*.csv.gz
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.tfrecord
+
+# Model weights & checkpoints
+models/
+checkpoints/
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.onnx
+*.safetensors
+*.gguf
+*.pkl
+*.joblib
+*.keras
+*.tflite
+
+# Experiment tracking & logs
+wandb/
+mlruns/
+mlartifacts/
+runs/
+lightning_logs/
+tb_logs/
+outputs/
+multirun/
+
+# Caches
+.cache/
+huggingface/
+.gradio/
+
+# Books & heavy files
+RESOURCES/BOOKS/*
+!RESOURCES/BOOKS/README.md
+*.pdf
+*.epub
+# Operating Systems
+*.mobi
+*.djvu
+
+# Media & archives
+*.mp4
+*.mkv
+*.mov
+# Experiment tracking & logs
+wandb/
+mlruns/
+mlartifacts/
+runs/
+*.avi
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.tgz
+*.iso
+*.deb
+*.AppImage
+
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+# Operating Systems
+*.db-journal
+
+
+# Node.js (in case of web projects)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm/
+
+
+# Editors & IDEs
+# VS Code / Antigravity (my settings live in SETUP/VSCODE instead)
+.vscode/
+*.code-workspace
+.history/
+
+# JetBrains (CLion, PyCharm...)
+.idea/
+*.iml
+
+# Vim / Neovim / Emacs
+*.swp
+*.swo
+*~
+.netrwhist
+\#*\#
+.\#*
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.sln.docstates
+
+
+# Operating Systems
+# Linux
+.directory
+.Trash-*
+.nfs*
+.fuse_hidden*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Logs & temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+*.rej
+tmp/
+temp/
