@@ -55,5 +55,5 @@ if __name__ == "__main__":
     plt.xlabel("Real Part")
     plt.imshow(image, cmap=Color_Map, extent=(X_MIN, X_MAX, Y_MIN, Y_MAX))
     print(Mode.__le__)
-    plt.savefig(os.path.join(os.path.dirname(os.path.abspath()), f"{Mode}.png"), dpi=150)
+    plt.savefig(os.path.join(os.path.dirname(os.path.abspath("")), f"{Mode}.png"), dpi=150)
     plt.show()
